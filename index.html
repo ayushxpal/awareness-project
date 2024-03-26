@@ -3,9 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project for awareness</title>
+    <title>Solar Subsidy Awareness Hub</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Solar Subsidy Awareness Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#calculator">Subsidy Calculator</a></li>
+                <li><a href="#map">Interactive Map</a></li>
+                <li><a href="#cases">Case Studies</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#comparison">Comparison Tool</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="calculator">
+        <h2>Subsidy Calculator</h2>
+        <form>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter your location">
+            <label for="system-size">System Size (kW):</label>
+            <input type="number" id="system-size" name="system-size" placeholder="Enter system size">
+            <label for="income">Estimated Income:</label>
+            <input type="number" id="income" name="income" placeholder="Enter estimated income">
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="subsidy-result">
+            <!-- Subsidy calculation result will be displayed here -->
+        </div>
+    </section>
     
+
+    <section id="map">
+        <h2>Interactive Map</h2>
+        <div id="map-container">
+            <!-- Interactive map will be displayed here -->
+        </div>
+    </section>
+    
+    <section id="cases">
+        <h2>Case Studies</h2>
+        <div class="case-study">
+            <h3>Residential Installation</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida, mauris a aliquam suscipit, lorem nisl faucibus arcu, nec ullamcorper metus nulla id elit.</p>
+            <img src="residential-installation.jpg" alt="Residential Installation">
+        </div>
+        <div class="case-study">
+            <h3>Commercial Installation</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida, mauris a aliquam suscipit, lorem nisl faucibus arcu, nec ullamcorper metus nulla id elit.</p>
+            <img src="commercial-installation.jpg" alt="Commercial Installation">
+        </div>
+    </section>
+    
+
+    <section id="faq">
+        <h2>FAQ</h2>
+        <div class="faq-item">
+            <h3>What are solar subsidies?</h3>
+            <p>Solar subsidies are financial incentives provided by governments or other organizations to promote the adoption of solar energy.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How can I apply for solar subsidies?</h3>
+            <p>The application process for solar subsidies varies by location. You can usually find information and application forms on government websites or by contacting local authorities.</p>
+        </div>
+    </section>
+    
+
+    <section id="comparison">
+        <h2>Comparison Tool</h2>
+        <div>
+            <label for="with-subsidies">With Subsidies:</label>
+            <input type="number" id="with-subsidies" name="with-subsidies" placeholder="Enter cost with subsidies">
+        </div>
+        <div>
+            <label for="without-subsidies">Without Subsidies:</label>
+            <input type="number" id="without-subsidies" name="without-subsidies" placeholder="Enter cost without subsidies">
+        </div>
+        <button id="compare-button">Compare</button>
+        <div id="comparison-result">
+            <!-- Comparison result will be displayed here -->
+        </div>
+    </section>
+    
+
+    <section id="resources">
+        <h2>Resources</h2>
+        <ul>
+            <li><a href="https://www.example.com/government-subsidies">Government Subsidies</a></li>
+            <li><a href="https://www.example.com/ngo-resources">NGO Resources</a></li>
+            <li><a href="https://www.example.com/solar-guides">Solar Guides</a></li>
+        </ul>
+    </section>
+    
+
+    <footer>
+        <p>Contact us: example@email.com | Follow us on <a href="#">Twitter</a> and <a href="#">Facebook</a></p>
+    </footer>
 </body>
 </html>
