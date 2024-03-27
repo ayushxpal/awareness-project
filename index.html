@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar Subsidy Awareness Hub</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        // JavaScript for dynamic subsidy calculation
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector('#calculator form');
+            const subsidyResult = document.querySelector('#subsidy-result');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const location = form.elements['location'].value;
+                const systemSize = parseFloat(form.elements['system-size'].value);
+                const income = parseFloat(form.elements['income'].value);
+
+                // Perform dynamic calculation (dummy calculation for demonstration)
+                const subsidyAmount = (systemSize * 100) - income;
+
+                // Display result
+                subsidyResult.innerHTML = `Estimated Subsidy: $${subsidyAmount.toFixed(2)}`;
+            });
+
+            const compareButton = document.getElementById('compare-button');
+            const withSubsidiesInput = document.getElementById('with-subsidies');
+            const withoutSubsidiesInput = document.getElementById('without-subsidies');
+            const comparisonResult = document.getElementById('comparison-result');
+
+            compareButton.addEventListener('click', function() {
+                const withSubsidies = parseFloat(withSubsidiesInput.value);
+                const withoutSubsidies = parseFloat(withoutSubsidiesInput.value);
+
+                // Perform comparison
+                const savings = withoutSubsidies - withSubsidies;
+
+                // Display result
+                comparisonResult.innerHTML = `You could save $${savings.toFixed(2)} with subsidies.`;
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -21,6 +57,7 @@
         </nav>
     </header>
 
+    <!-- Subsidy Calculator -->
     <section id="calculator">
         <h2>Subsidy Calculator</h2>
         <form>
@@ -35,31 +72,35 @@
         <div id="subsidy-result">
             <!-- Subsidy calculation result will be displayed here -->
         </div>
+        <p>Use our subsidy calculator to estimate the financial incentives you could receive for installing solar panels in your area.</p>
     </section>
-    
 
+    <!-- Interactive Map -->
     <section id="map">
         <h2>Interactive Map</h2>
         <div id="map-container">
             <!-- Interactive map will be displayed here -->
         </div>
+        <p>Explore our interactive map to discover locations with available solar subsidies and existing solar installations in your region.</p>
     </section>
-    
+
+    <!-- Case Studies -->
     <section id="cases">
         <h2>Case Studies</h2>
         <div class="case-study">
             <h3>Residential Installation</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida, mauris a aliquam suscipit, lorem nisl faucibus arcu, nec ullamcorper metus nulla id elit.</p>
+            <p>Learn how John and his family reduced their electricity bills by 50% after installing solar panels on their roof.</p>
             <img src="residential-installation.jpg" alt="Residential Installation">
         </div>
         <div class="case-study">
             <h3>Commercial Installation</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida, mauris a aliquam suscipit, lorem nisl faucibus arcu, nec ullamcorper metus nulla id elit.</p>
+            <p>Discover how XYZ Corporation achieved sustainability goals and cost savings through a large-scale solar installation.</p>
             <img src="commercial-installation.jpg" alt="Commercial Installation">
         </div>
+        <p>Explore our collection of case studies to see real-life examples of how solar energy is benefiting both residential and commercial properties.</p>
     </section>
-    
 
+    <!-- FAQ -->
     <section id="faq">
         <h2>FAQ</h2>
         <div class="faq-item">
@@ -70,9 +111,10 @@
             <h3>How can I apply for solar subsidies?</h3>
             <p>The application process for solar subsidies varies by location. You can usually find information and application forms on government websites or by contacting local authorities.</p>
         </div>
+        <p>Explore our FAQ section to find answers to common questions about solar subsidies and their application process.</p>
     </section>
-    
 
+    <!-- Comparison Tool -->
     <section id="comparison">
         <h2>Comparison Tool</h2>
         <div>
@@ -87,21 +129,11 @@
         <div id="comparison-result">
             <!-- Comparison result will be displayed here -->
         </div>
+        <p>Use our comparison tool to see how much you could save with solar subsidies compared to without subsidies.</p>
     </section>
-    
 
+    <!-- Resources -->
     <section id="resources">
         <h2>Resources</h2>
         <ul>
-            <li><a href="https://www.example.com/government-subsidies">Government Subsidies</a></li>
-            <li><a href="https://www.example.com/ngo-resources">NGO Resources</a></li>
-            <li><a href="https://www.example.com/solar-guides">Solar Guides</a></li>
-        </ul>
-    </section>
-    
-
-    <footer>
-        <p>Contact us: example@email.com | Follow us on <a href="#">Twitter</a> and <a href="#">Facebook</a></p>
-    </footer>
-</body>
-</html>
+            <li><a href="https://www.example.com/government-subsidies">Government Subsidies</a>
