@@ -212,3 +212,28 @@ footer a:hover {
 #resources ul li a:hover {
     color: #ffd700;
 }
+/* Additional Styles */
+
+nav ul li a {
+    color: #007BFF; /* Blue color */
+}
+
+section {
+    border: 1px solid #007BFF; /* Blue border */
+}
+
+form button, #compare-button {
+    background-color: #007BFF; /* Blue buttons */
+}
+
+footer {
+    background-color: #007BFF; /* Blue footer */
+}
+
+.case-study h3, .faq-item h3 {
+    color: #007BFF; /* Blue subheadings */
+}
+
+.case-study img, .faq-item img {
+    border: 2px solid #007BFF; /* Blue border around images */
+}

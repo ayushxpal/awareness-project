@@ -92,7 +92,69 @@
             <p>Learn how John and his family reduced their electricity bills by 50% after installing solar panels on their roof.</p>
             <img src="residential-installation.jpg" alt="Residential Installation">
         </div>
-        <div class="case-study">
+        <div class="case-study"// main.js
+
+// Function to calculate subsidy
+function calculateSubsidy() {
+    var location = document.getElementById('location').value;
+    var systemSize = document.getElementById('system-size').value;
+    var income = document.getElementById('income').value;
+
+    // Perform subsidy calculation here based on your formula
+    var subsidy = systemSize * income; // This is a placeholder formula
+
+    document.getElementById('subsidy-result').innerHTML = "Estimated Subsidy: " + subsidy;
+}
+
+// Attach event listener to the form submit button
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form from submitting and refreshing the page
+    calculateSubsidy();
+});
+
+// Function to compare costs with and without subsidies
+function compareCosts() {
+    var withSubsidies = document.getElementById('with-subsidies').value;
+    var withoutSubsidies = document.getElementById('without-subsidies').value;
+
+    var savings = withoutSubsidies - withSubsidies;
+
+    document.getElementById('comparison-result').innerHTML = "You could save: " + savings;
+}
+
+// Attach event listener to the compare button
+document.getElementById('compare-button').addEventListener('click', compareCosts);// main.js
+
+// Function to calculate subsidy
+function calculateSubsidy() {
+    var location = document.getElementById('location').value;
+    var systemSize = document.getElementById('system-size').value;
+    var income = document.getElementById('income').value;
+
+    // Perform subsidy calculation here based on your formula
+    var subsidy = systemSize * income; // This is a placeholder formula
+
+    document.getElementById('subsidy-result').innerHTML = "Estimated Subsidy: " + subsidy;
+}
+
+// Attach event listener to the form submit button
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form from submitting and refreshing the page
+    calculateSubsidy();
+});
+
+// Function to compare costs with and without subsidies
+function compareCosts() {
+    var withSubsidies = document.getElementById('with-subsidies').value;
+    var withoutSubsidies = document.getElementById('without-subsidies').value;
+
+    var savings = withoutSubsidies - withSubsidies;
+
+    document.getElementById('comparison-result').innerHTML = "You could save: " + savings;
+}
+
+// Attach event listener to the compare button
+document.getElementById('compare-button').addEventListener('click', compareCosts);>
             <h3>Commercial Installation</h3>
             <p>Discover how XYZ Corporation achieved sustainability goals and cost savings through a large-scale solar installation.</p>
             <img src="commercial-installation.jpg" alt="Commercial Installation">
