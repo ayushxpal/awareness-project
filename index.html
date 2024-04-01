@@ -76,13 +76,34 @@
     </section>
 
     <!-- Interactive Map -->
-    <section id="map">
-        <h2>Interactive Map</h2>
-        <div id="map-container">
-            <!-- Interactive map will be displayed here -->
-        </div>
-        <p>Explore our interactive map to discover locations with available solar subsidies and existing solar installations in your region.</p>
-    </section>
+    <!-- Interactive Map -->
+<section id="map">
+    <h2>Interactive Map</h2>
+    <div id="map-container" style="height: 400px;"></div>
+    <p>Explore our interactive map to discover locations with available solar subsidies and existing solar installations in your region.</p>
+</section>
+
+<script
+
+src="https://polyfill.io/v3/polyfill.min.js?features=default"
+
+defer
+
+></script>
+<script>
+    let map;
+
+    function initMap() {
+        // Initialize map
+        map = new google.maps.Map(document.getElementById("map-container"), {
+            center: { lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE },
+            zoom: 8,
+        });
+
+        // You can add markers, polygons, or other overlays to the map here
+    }
+</script>
+
 
     <!-- Case Studies -->
     <section id="cases">
