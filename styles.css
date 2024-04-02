@@ -236,4 +236,24 @@ footer {
 
 .case-study img, .faq-item img {
     border: 2px solid #007BFF; /* Blue border around images */
+}/* styles.css */
+
+.case-study img:hover, .faq-item img:hover {
+    transform: scale(1.05); /* Slightly enlarge images on hover */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    color: #0056b3; /* Darken link color on hover */
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+}/* styles.css */
+
+.case-study img:hover, .faq-item img:hover {
+    transform: scale(1.05); /* Slightly enlarge images on hover */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    color: #0056b3; /* Darken link color on hover */
+    transition: color 0.3s ease-in-out; /* Smooth transition */
 }
