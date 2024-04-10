@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="calculator.html">Subsidy Calculator</a></li>
+            <li><a href="map.html">Interactive Map</a></li>
+            <li><a href="cases.html">Case Studies</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="comparison.html">Comparison Tool</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <section id="calculator">
+        <h2>Subsidy Calculator</h2>
+        <form>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter your location">
+            <label for="system-size">System Size (kW):</label>
+            <input type="number" id="system-size" name="system-size" placeholder="Enter system size">
+            <label for="income">Estimated Income:</label>
+            <input type="number" id="income" name="income" placeholder="Enter estimated income">
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="subsidy-result">
+            <!-- Subsidy calculation result will be displayed here -->
+        </div>
+        <p>Use our subsidy calculator to estimate the financial incentives you could receive for installing solar panels in your area.</p>
+    </section>
+    <script src="homepage.js"></script>
+</body>
+</html>
